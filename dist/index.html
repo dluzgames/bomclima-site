@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refrigeração Bom Clima — Ar-Condicionado, Refrigeração e Lavadoras em Paraíso do Tocantins</title>
-    <meta name="description" content="Assistência técnica especializada em ar-condicionado split, higienização antibacteriana, conserto de geladeiras e lavadoras em Paraíso do Tocantins - TO. Atendimento rápido em domicílio e comércio.">
+    <title>Refrigeração Bom Clima — Ar-Condicionado, Geladeiras e Lavadoras em Paraíso do Tocantins</title>
+    <meta name="description" content="Refrigeração Bom Clima: 11 anos de mercado em Paraíso do Tocantins. Instalação e higienização de ar split, manutenção de geladeiras, freezers e máquinas de lavar. Residencial, comercial e industrial.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
@@ -31,7 +31,6 @@
             --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
             --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
             --shadow-lg: 0 20px 40px -15px rgba(2, 132, 199, 0.18);
-            --shadow-glow: 0 0 25px rgba(6, 182, 212, 0.25);
         }
 
         * {
@@ -69,7 +68,7 @@
         .top-bar-left, .top-bar-right {
             display: flex;
             align-items: center;
-            gap: 18px;
+            gap: 16px;
             flex-wrap: wrap;
         }
         .status-pill {
@@ -114,7 +113,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.94);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(16px);
             border-bottom: 1px solid var(--border);
             transition: all 0.3s ease;
@@ -122,7 +121,7 @@
         .nav-container {
             max-width: 1240px;
             margin: 0 auto;
-            padding: 14px 20px;
+            padding: 12px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -133,29 +132,17 @@
             gap: 12px;
             text-decoration: none;
         }
-        .logo-icon {
-            width: 46px;
-            height: 46px;
-            background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+        .logo-img {
+            width: 48px;
+            height: 48px;
             border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
-        }
-        .logo-icon svg {
-            width: 26px;
-            height: 26px;
-            fill: none;
-            stroke: currentColor;
-            stroke-width: 2.2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
+            object-fit: cover;
+            border: 2px solid var(--border);
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
         }
         .logo-text h1 {
             font-family: var(--font-heading);
-            font-size: 22px;
+            font-size: 21px;
             font-weight: 800;
             color: var(--dark);
             line-height: 1.1;
@@ -172,7 +159,7 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 26px;
+            gap: 24px;
             list-style: none;
         }
         .nav-links a {
@@ -226,7 +213,6 @@
         .btn-header-wpp:hover {
             background: var(--accent-green-hover);
             transform: translateY(-1px);
-            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
         }
         .btn-header-wpp svg {
             width: 17px;
@@ -238,7 +224,7 @@
         .hero {
             position: relative;
             background: linear-gradient(180deg, #F0F9FF 0%, #FFFFFF 100%);
-            padding: 70px 20px 80px;
+            padding: 65px 20px 75px;
             overflow: hidden;
             border-bottom: 1px solid var(--border);
         }
@@ -258,7 +244,7 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1.15fr 0.85fr;
-            gap: 48px;
+            gap: 46px;
             align-items: center;
             position: relative;
             z-index: 2;
@@ -273,22 +259,17 @@
             font-size: 13px;
             padding: 6px 14px;
             border-radius: 24px;
-            margin-bottom: 22px;
+            margin-bottom: 20px;
             border: 1px solid rgba(2, 132, 199, 0.25);
-        }
-        .hero-badge svg {
-            width: 14px;
-            height: 14px;
-            fill: #0284C7;
         }
         .hero h2 {
             font-family: var(--font-heading);
-            font-size: clamp(34px, 4.4vw, 52px);
+            font-size: clamp(34px, 4.4vw, 50px);
             font-weight: 900;
             color: var(--dark);
             line-height: 1.12;
             letter-spacing: -1.2px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
         .hero h2 .highlight {
             color: var(--primary);
@@ -307,17 +288,17 @@
             z-index: -1;
         }
         .hero p {
-            font-size: 18px;
+            font-size: 17.5px;
             color: var(--text-muted);
             line-height: 1.65;
-            margin-bottom: 30px;
+            margin-bottom: 28px;
             max-width: 580px;
         }
         .hero-buttons {
             display: flex;
             flex-wrap: wrap;
             gap: 14px;
-            margin-bottom: 36px;
+            margin-bottom: 34px;
         }
         .btn-hero-primary {
             display: inline-flex;
@@ -327,9 +308,9 @@
             background: var(--accent-green);
             color: var(--white);
             font-weight: 800;
-            font-size: 17px;
+            font-size: 16px;
             text-decoration: none;
-            padding: 18px 32px;
+            padding: 17px 30px;
             border-radius: 14px;
             box-shadow: 0 10px 28px rgba(37, 211, 102, 0.38);
             transition: all 0.25s ease;
@@ -337,7 +318,6 @@
         .btn-hero-primary:hover {
             background: var(--accent-green-hover);
             transform: translateY(-2px);
-            box-shadow: 0 14px 34px rgba(37, 211, 102, 0.48);
         }
         .btn-hero-primary svg {
             width: 22px;
@@ -352,9 +332,9 @@
             background: var(--white);
             color: var(--dark);
             font-weight: 700;
-            font-size: 16px;
+            font-size: 15px;
             text-decoration: none;
-            padding: 18px 26px;
+            padding: 17px 24px;
             border-radius: 14px;
             border: 1px solid var(--border);
             box-shadow: var(--shadow-sm);
@@ -368,8 +348,8 @@
         .hero-proof-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            padding-top: 24px;
+            gap: 14px;
+            padding-top: 22px;
             border-top: 1px solid var(--border);
         }
         .proof-box {
@@ -389,8 +369,8 @@
             flex-shrink: 0;
         }
         .proof-icon-wrap svg {
-            width: 18px;
-            height: 18px;
+            width: 17px;
+            height: 17px;
             fill: currentColor;
         }
         .proof-text strong {
@@ -404,22 +384,23 @@
             color: var(--text-muted);
         }
 
-        /* Hero Right: Solicitador Rápido Glassmorphic com Imagem */
+        /* Hero Right: Solicitador Rápido com Foto Real da Equipe Bom Clima */
         .hero-interactive-card {
             background: var(--white);
             border-radius: 24px;
-            padding: 28px 24px;
+            padding: 26px 22px;
             border: 1px solid rgba(226, 232, 240, 0.9);
             box-shadow: var(--shadow-lg);
             position: relative;
         }
         .hero-media-preview {
             width: 100%;
-            height: 160px;
+            height: 170px;
             border-radius: 16px;
             overflow: hidden;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             position: relative;
+            background: #0F172A;
         }
         .hero-media-preview img {
             width: 100%;
@@ -430,10 +411,10 @@
         .hero-media-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, transparent 40%, rgba(10, 17, 32, 0.85) 100%);
+            background: linear-gradient(180deg, transparent 40%, rgba(10, 17, 32, 0.88) 100%);
             display: flex;
             align-items: flex-end;
-            padding: 14px 18px;
+            padding: 12px 16px;
             color: var(--white);
         }
         .hero-media-overlay span {
@@ -445,7 +426,7 @@
         }
         .hero-interactive-card h3 {
             font-family: var(--font-heading);
-            font-size: 19px;
+            font-size: 18px;
             font-weight: 800;
             color: var(--dark);
             margin-bottom: 6px;
@@ -454,41 +435,41 @@
         .hero-interactive-card p {
             font-size: 13px;
             color: var(--text-muted);
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
         .quick-options-list {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 9px;
         }
         .quick-item {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 16px;
+            padding: 11px 14px;
             border-radius: 12px;
             background: var(--bg-light);
             border: 1px solid var(--border);
             text-decoration: none;
             color: var(--text-dark);
-            font-size: 14px;
+            font-size: 13.5px;
             font-weight: 600;
             transition: all 0.2s ease;
         }
         .quick-item:hover {
             border-color: var(--primary);
             background: #F0F9FF;
-            transform: translateX(4px);
+            transform: translateX(3px);
             color: var(--primary);
         }
         .quick-item-left {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
         .quick-icon-circle {
-            width: 32px;
-            height: 32px;
+            width: 30px;
+            height: 30px;
             border-radius: 8px;
             background: var(--white);
             display: flex;
@@ -499,25 +480,25 @@
             border: 1px solid var(--border);
         }
         .quick-icon-circle svg {
-            width: 17px;
-            height: 17px;
+            width: 15px;
+            height: 15px;
             fill: none;
             stroke: currentColor;
             stroke-width: 2;
         }
         .quick-arrow {
             color: #94A3B8;
-            font-size: 15px;
+            font-size: 14px;
             transition: transform 0.2s;
         }
         .quick-item:hover .quick-arrow {
             color: var(--primary);
-            transform: translateX(3px);
+            transform: translateX(2px);
         }
 
         /* Marcas Atendidas (Brand Trust DNA) */
         .brands-bar {
-            padding: 38px 20px;
+            padding: 34px 20px;
             background: var(--white);
             border-bottom: 1px solid var(--border);
             text-align: center;
@@ -528,7 +509,7 @@
             color: #94A3B8;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            margin-bottom: 22px;
+            margin-bottom: 18px;
         }
         .brands-wrap {
             max-width: 1240px;
@@ -536,19 +517,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 36px;
+            gap: 28px;
             flex-wrap: wrap;
         }
         .brand-badge {
             font-family: var(--font-heading);
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 800;
             color: #475569;
-            padding: 8px 18px;
+            padding: 7px 16px;
             background: #F8FAFC;
             border-radius: 10px;
             border: 1px solid #E2E8F0;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.4px;
             transition: all 0.2s ease;
         }
         .brand-badge:hover {
@@ -558,7 +539,7 @@
             transform: translateY(-2px);
         }
 
-        /* Seção Antes e Depois (Interativo de Sanitização) */
+        /* Seção Antes e Depois (Com Fotos Reais do Instagram @bomclimarefri) */
         .comparison-section {
             padding: 80px 20px;
             background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
@@ -567,7 +548,7 @@
         .section-header {
             text-align: center;
             max-width: 680px;
-            margin: 0 auto 50px;
+            margin: 0 auto 46px;
         }
         .section-tag {
             display: inline-block;
@@ -579,19 +560,19 @@
             background: #E0F2FE;
             padding: 5px 14px;
             border-radius: 20px;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
         .section-title {
             font-family: var(--font-heading);
-            font-size: clamp(28px, 3.8vw, 42px);
+            font-size: clamp(28px, 3.8vw, 40px);
             font-weight: 900;
             color: var(--dark);
             line-height: 1.18;
             letter-spacing: -0.8px;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
         .section-subtitle {
-            font-size: 16px;
+            font-size: 15.5px;
             color: var(--text-muted);
             line-height: 1.6;
         }
@@ -623,8 +604,9 @@
         }
         .comp-image-box {
             position: relative;
-            height: 230px;
+            height: 240px;
             overflow: hidden;
+            background: #1E293B;
         }
         .comp-image-box img {
             width: 100%;
@@ -653,7 +635,7 @@
             backdrop-filter: blur(4px);
         }
         .comp-content {
-            padding: 26px;
+            padding: 24px;
         }
         .comp-content h4 {
             font-family: var(--font-heading);
@@ -667,7 +649,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
         .comp-list li {
             display: flex;
@@ -702,13 +684,13 @@
             flex-shrink: 0;
         }
         .comp-metric-banner {
-            padding: 12px 16px;
+            padding: 12px 14px;
             border-radius: 12px;
             font-size: 13px;
             font-weight: 700;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
         .metric-bad {
             background: #FEF2F2;
@@ -721,9 +703,9 @@
             border: 1px solid #BBF7D0;
         }
 
-        /* Seção Serviços em Grid com Fotos Reais */
+        /* Seção Serviços em Grid com Fotos Reais do Instagram */
         .services-section {
-            padding: 90px 20px;
+            padding: 85px 20px;
             background: var(--white);
             border-bottom: 1px solid var(--border);
         }
@@ -732,7 +714,7 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
+            gap: 26px;
         }
         .service-card {
             background: var(--white);
@@ -751,9 +733,10 @@
             border-color: #BAE6FD;
         }
         .service-img-wrap {
-            height: 200px;
+            height: 210px;
             position: relative;
             overflow: hidden;
+            background: #0F172A;
         }
         .service-img-wrap img {
             width: 100%;
@@ -768,7 +751,7 @@
             position: absolute;
             bottom: 12px;
             left: 14px;
-            background: rgba(10, 17, 32, 0.85);
+            background: rgba(10, 17, 32, 0.88);
             color: var(--white);
             padding: 4px 12px;
             border-radius: 14px;
@@ -778,31 +761,31 @@
             border: 1px solid rgba(255,255,255,0.15);
         }
         .service-body {
-            padding: 24px;
+            padding: 22px;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
         }
         .service-body h4 {
             font-family: var(--font-heading);
-            font-size: 20px;
+            font-size: 19px;
             font-weight: 800;
             color: var(--dark);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             letter-spacing: -0.4px;
         }
         .service-body p {
-            font-size: 14px;
+            font-size: 13.5px;
             color: var(--text-muted);
-            margin-bottom: 18px;
+            margin-bottom: 16px;
             line-height: 1.55;
         }
         .service-check-list {
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 9px;
-            margin-bottom: 22px;
+            gap: 8px;
+            margin-bottom: 20px;
         }
         .service-check-list li {
             display: flex;
@@ -826,9 +809,9 @@
             background: #F0F9FF;
             color: var(--primary);
             font-weight: 700;
-            font-size: 14px;
+            font-size: 13.5px;
             text-decoration: none;
-            padding: 12px 18px;
+            padding: 12px 16px;
             border-radius: 12px;
             border: 1px solid #BAE6FD;
             transition: all 0.2s ease;
@@ -838,6 +821,87 @@
             background: var(--primary);
             color: var(--white);
             border-color: var(--primary);
+        }
+
+        /* Vitrine de Postagens Reais do Instagram @bomclimarefri */
+        .instagram-showcase-section {
+            padding: 85px 20px;
+            background: #F8FAFC;
+            border-bottom: 1px solid var(--border);
+        }
+        .insta-grid {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .insta-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.25s ease;
+        }
+        .insta-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: #BAE6FD;
+        }
+        .insta-img-box {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            background: #0F172A;
+        }
+        .insta-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .insta-card:hover .insta-img-box img {
+            transform: scale(1.05);
+        }
+        .insta-overlay-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.65);
+            color: var(--white);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+        }
+        .insta-caption {
+            padding: 14px 16px;
+            font-size: 13px;
+            color: var(--text-dark);
+            line-height: 1.45;
+            font-weight: 500;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .insta-meta {
+            padding: 8px 16px 14px;
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #94A3B8;
+            font-weight: 600;
         }
 
         /* Banner Clima Local de Paraíso do Tocantins */
@@ -901,7 +965,7 @@
         /* Seção Sobre Nós & Oficina Física */
         .about-section {
             padding: 85px 20px;
-            background: var(--bg-light);
+            background: var(--white);
             border-bottom: 1px solid var(--border);
         }
         .about-container {
@@ -914,7 +978,7 @@
         }
         .about-text h3 {
             font-family: var(--font-heading);
-            font-size: clamp(28px, 3.5vw, 42px);
+            font-size: clamp(28px, 3.5vw, 40px);
             font-weight: 800;
             color: var(--dark);
             line-height: 1.18;
@@ -925,16 +989,16 @@
             font-size: 16px;
             color: var(--text-body);
             line-height: 1.65;
-            margin-bottom: 24px;
+            margin-bottom: 22px;
         }
         .about-numbers-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 16px;
-            margin-bottom: 30px;
+            margin-bottom: 28px;
         }
         .about-num-card {
-            background: var(--white);
+            background: var(--bg-light);
             border-radius: 14px;
             padding: 20px;
             border: 1px solid var(--border);
@@ -1026,7 +1090,7 @@
         /* Depoimentos / Social Proof Google */
         .reviews-section {
             padding: 85px 20px;
-            background: var(--white);
+            background: var(--bg-light);
             border-bottom: 1px solid var(--border);
         }
         .reviews-header-badge {
@@ -1037,7 +1101,7 @@
             margin-bottom: 16px;
         }
         .google-pill {
-            background: #F8FAFC;
+            background: var(--white);
             border: 1px solid var(--border);
             border-radius: 20px;
             padding: 6px 14px;
@@ -1056,7 +1120,7 @@
             gap: 24px;
         }
         .review-card {
-            background: var(--bg-light);
+            background: var(--white);
             border-radius: 18px;
             padding: 28px;
             border: 1px solid var(--border);
@@ -1115,7 +1179,7 @@
         /* FAQ Section */
         .faq-section {
             padding: 80px 20px;
-            background: var(--bg-light);
+            background: var(--white);
             border-bottom: 1px solid var(--border);
         }
         .faq-container {
@@ -1123,7 +1187,7 @@
             margin: 0 auto;
         }
         .faq-item {
-            background: var(--white);
+            background: var(--bg-light);
             border-radius: 14px;
             border: 1px solid var(--border);
             margin-bottom: 14px;
@@ -1177,7 +1241,7 @@
         }
         .cta-final h3 {
             font-family: var(--font-heading);
-            font-size: clamp(30px, 4.2vw, 48px);
+            font-size: clamp(30px, 4.2vw, 46px);
             font-weight: 900;
             margin-bottom: 16px;
             line-height: 1.15;
@@ -1282,6 +1346,9 @@
             .services-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+            .insta-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
             .comparison-grid {
                 grid-template-columns: 1fr;
             }
@@ -1310,6 +1377,9 @@
             .services-grid {
                 grid-template-columns: 1fr;
             }
+            .insta-grid {
+                grid-template-columns: 1fr;
+            }
             .hero-proof-grid {
                 grid-template-columns: 1fr;
                 gap: 12px;
@@ -1335,7 +1405,7 @@
 </head>
 <body>
 
-    <!-- Top Bar com Plantão em Tempo Real -->
+    <!-- Top Bar com Plantão e Instagram Oficial -->
     <div class="top-bar">
         <div class="top-bar-container">
             <div class="top-bar-left">
@@ -1345,6 +1415,9 @@
                 <span style="font-size: 12px; color: #94A3B8;">Rua Bernardino Maciel, 2254 — Setor Oeste</span>
             </div>
             <div class="top-bar-right">
+                <a href="https://www.instagram.com/bomclimarefri/" target="_blank" class="top-link" style="color: #E2E8F0;">
+                    📸 Instagram: <strong>@bomclimarefri</strong>
+                </a>
                 <a href="tel:6336024147" class="top-link">
                     📞 Fixo: (63) 3602-4147
                 </a>
@@ -1355,15 +1428,11 @@
         </div>
     </div>
 
-    <!-- Header / Navbar Principal -->
+    <!-- Header com Logo Oficial do Instagram -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo-box">
-                <div class="logo-icon">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"/>
-                    </svg>
-                </div>
+                <img src="assets/bomclima_logo.jpg" alt="Logo Refrigeração Bom Clima" class="logo-img">
                 <div class="logo-text">
                     <h1>Bom Clima</h1>
                     <span>Refrigeração & Climatização</span>
@@ -1373,9 +1442,10 @@
             <ul class="nav-links">
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#higienizacao">Higienização</a></li>
+                <li><a href="#trabalhos">Nossos Trabalhos</a></li>
                 <li><a href="#marcas">Marcas</a></li>
-                <li><a href="#sobre">Nossa Oficina</a></li>
-                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#sobre">A Oficina</a></li>
+                <li><a href="#avaliacoes">Depoimentos</a></li>
             </ul>
 
             <div class="header-actions">
@@ -1396,16 +1466,16 @@
         <div class="hero-container">
             <div class="hero-text-content">
                 <div class="hero-badge">
-                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-                    Assistência Técnica Especializada em Paraíso do Tocantins
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="#0284C7"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    11 Anos de Excelência em Paraíso do Tocantins e Região
                 </div>
                 <h2>Seu Ar Parou de Gelar? <span class="highlight">A Gente Resolve Hoje.</span></h2>
-                <p>Instalação padrão com bomba de vácuo, higienização antibacteriana profunda, recarga de gás e conserto ágil de geladeiras e lavadoras. Diagnóstico transparente, visita no local e garantia formal no serviço.</p>
+                <p>Equipe especializada em climatização residencial, comercial e industrial. Instalação padrão de fábrica, higienização profunda sem sujeira, recarga de gás e conserto rápido de geladeiras, freezers e lavadoras.</p>
                 
                 <div class="hero-buttons">
                     <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20preciso%20de%20atendimento%20para%20ar-condicionado%20em%20Para%C3%ADso!" target="_blank" class="btn-hero-primary">
                         <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.45 1.03 2.62.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.06-.1-.22-.16-.47-.28z"/></svg>
-                        <span>Chamar Técnico no WhatsApp</span>
+                        <span>Chamar no WhatsApp: (63) 98428-8009</span>
                     </a>
                     <a href="tel:6336024147" class="btn-hero-secondary">
                         <span>Ligar no Fixo: (63) 3602-4147</span>
@@ -1418,7 +1488,7 @@
                             <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
                         </div>
                         <div class="proof-text">
-                            <strong>Visita em Domicílio</strong>
+                            <strong>11 Anos de Tradição</strong>
                             <span>Paraíso e região</span>
                         </div>
                     </div>
@@ -1436,27 +1506,27 @@
                             <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
                         </div>
                         <div class="proof-text">
-                            <strong>Orçamento Justo</strong>
-                            <span>Sem taxas ocultas</span>
+                            <strong>Visita no Local</strong>
+                            <span>Orçamento sincero</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Card Interativo Solicitador Rápido com Foto -->
+            <!-- Card Solicitador Rápido com Foto Real da Equipe Bom Clima -->
             <div class="hero-interactive-card">
                 <div class="hero-media-preview">
-                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Técnico de Ar-Condicionado Bom Clima em Paraíso">
+                    <img src="assets/post_4_DcbAn0HNTp1.jpg" alt="Equipe Refrigeração Bom Clima Pronta para Atender">
                     <div class="hero-media-overlay">
                         <span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                            Atendimento Rápido em Paraíso
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            Equipe Pronta para Atender Você
                         </span>
                     </div>
                 </div>
 
                 <h3>O que está acontecendo com seu aparelho?</h3>
-                <p>Selecione abaixo para abrir o WhatsApp com a mensagem pronta:</p>
+                <p>Selecione seu problema para abrir o WhatsApp com chamado pronto:</p>
 
                 <div class="quick-options-list">
                     <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20meu%20ar-condicionado%20n%C3%A3o%20est%C3%A1%20gelando%20e%20preciso%20de%20uma%20visita%20t%C3%A9cnica!" target="_blank" class="quick-item">
@@ -1531,149 +1601,149 @@
         </div>
     </section>
 
-    <!-- Seção Antes & Depois: Higienização Profunda -->
+    <!-- Seção Antes & Depois: Fotos Reais de Higienização Bom Clima -->
     <section class="comparison-section" id="higienizacao">
         <div class="section-header">
-            <span class="section-tag">Higienização Profunda</span>
-            <h3 class="section-title">O Perigo Oculto Dentro do Seu Ar-Condicionado</h3>
-            <p class="section-subtitle">Um aparelho sem higienização acumula colônias de fungos, ácaros e bactérias. Veja a diferença comprovada do nosso processo de limpeza técnica:</p>
+            <span class="section-tag">Higienização Técnica</span>
+            <h3 class="section-title">O Perigo do Ar Sujo vs. Higienização Técnica Bom Clima</h3>
+            <p class="section-subtitle">Fotos reais dos nossos atendimentos em Paraíso do Tocantins. A manutenção preventiva a cada 6 meses protege seus pulmões e o seu bolso.</p>
         </div>
 
         <div class="comparison-grid">
-            <!-- Card Antes -->
+            <!-- Card Antes: Foto Real post_11 -->
             <div class="comp-card comp-card-bad">
                 <div class="comp-image-box">
-                    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80" alt="Ar-Condicionado Sujo com Mofo">
-                    <span class="comp-tag tag-bad">Antes da Higienização</span>
+                    <img src="assets/post_11_Da5GKLjN_c_.jpg" alt="Ar-Condicionado Sujo e com Defeito">
+                    <span class="comp-tag tag-bad">Antes da Manutenção</span>
                 </div>
                 <div class="comp-content">
-                    <h4>Ar Obstruído & Contaminado</h4>
+                    <h4>Ar Obstruído & Cheiro de Mofo</h4>
                     <ul class="comp-list">
                         <li>
                             <span class="comp-bad-icon">✕</span>
-                            <span>Turbina travada com crostas de poeira e ácaros</span>
+                            <span>Turbina travada de crostas de poeira e ácaros</span>
                         </li>
                         <li>
                             <span class="comp-bad-icon">✕</span>
-                            <span>Cheiro de mofo e crises frequentes de rinite/alergia</span>
+                            <span>Ar com cheiro desagradável atacando a rinite</span>
                         </li>
                         <li>
                             <span class="comp-bad-icon">✕</span>
-                            <span>Fluxo de ar fraco e demora para gelar o ambiente</span>
+                            <span>Aparelho demora o dobro para gelar o quarto</span>
                         </li>
                         <li>
                             <span class="comp-bad-icon">✕</span>
-                            <span>Compressor superaquecido trabalhando no limite</span>
+                            <span>Compressor forçado trabalhando superaquecido</span>
                         </li>
                     </ul>
                     <div class="comp-metric-banner metric-bad">
-                        ⚠️ <strong>Prejuízo:</strong> Até +35% de gasto desnecessário na sua conta de energia.
+                        ⚠️ <strong>Prejuízo:</strong> Até +35% a mais na sua conta de energia de Paraíso.
                     </div>
                 </div>
             </div>
 
-            <!-- Card Depois -->
+            <!-- Card Depois: Foto Real post_9 -->
             <div class="comp-card comp-card-good">
                 <div class="comp-image-box">
-                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80" alt="Ar-Condicionado Limpo Higienizado Bom Clima">
-                    <span class="comp-tag tag-good">Depois da Bom Clima</span>
+                    <img src="assets/post_9_DbamkAHOVJ1.jpg" alt="Higienização com Bolsa Coletora Bom Clima">
+                    <span class="comp-tag tag-good">Higienização Técnica Bom Clima</span>
                 </div>
                 <div class="comp-content">
-                    <h4>Serpentina & Turbina Esterilizadas</h4>
+                    <h4>Lavagem Química Profunda & Sem Sujeira</h4>
                     <ul class="comp-list">
                         <li>
                             <span class="comp-good-icon">✓</span>
-                            <span>Lavagem com bolsa coletora especial sem sujar sua parede</span>
+                            <span>Bolsa coletora profissional sem pingar na sua parede</span>
                         </li>
                         <li>
                             <span class="comp-good-icon">✓</span>
-                            <span>Aplicação de produto bactericida hospitalar certificado</span>
+                            <span>Eliminação de 99,9% dos fungos com bactericida</span>
                         </li>
                         <li>
                             <span class="comp-good-icon">✓</span>
-                            <span>Ar puro, sensação imediata de frescor e gelo potente</span>
+                            <span>Ar puro, sensação imediata de alívio e frescor</span>
                         </li>
                         <li>
                             <span class="comp-good-icon">✓</span>
-                            <span>Desobstrução completa do dreno evitando pingos na sala</span>
+                            <span>Dreno desobstruído sem pingadeiras na sala</span>
                         </li>
                     </ul>
                     <div class="comp-metric-banner metric-good">
-                        ✅ <strong>Benefício:</strong> Ar 100% puro e economia imediata na fatura de luz.
+                        ✅ <strong>Benefício:</strong> Ar gelando no talo e economia real na fatura de luz.
                     </div>
                 </div>
             </div>
         </div>
 
         <div style="text-align: center; margin-top: 36px;">
-            <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20higieniza%C3%A7%C3%A3o%20completa%20no%20meu%20ar-condicionado!" target="_blank" class="btn-hero-primary" style="display: inline-flex;">
-                <span>Agendar Higienização Completa no WhatsApp</span>
+            <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20higieniza%C3%A7%C3%A3o%20no%20meu%20ar-condicionado!" target="_blank" class="btn-hero-primary" style="display: inline-flex;">
+                <span>Agendar Higienização com a Bom Clima</span>
             </a>
         </div>
     </section>
 
-    <!-- Seção de Serviços Especializados com Fotos Reais -->
+    <!-- Seção de Serviços Especializados com Fotos Reais da Oficina -->
     <section class="services-section" id="servicos">
         <div class="section-header">
             <span class="section-tag">Nossos Serviços</span>
-            <h3 class="section-title">Soluções Completas com Técnicos Experientes</h3>
-            <p class="section-subtitle">Oficina com sede própria em Paraíso do Tocantins e equipe equipada para atendimentos residenciais e comerciais.</p>
+            <h3 class="section-title">Soluções Completas em Climatização & Eletros</h3>
+            <p class="section-subtitle">Atendemos residências, empresas, comércios e indústrias em Paraíso do Tocantins e cidades vizinhas.</p>
         </div>
 
         <div class="services-grid">
-            <!-- Card 1: Instalação Split -->
+            <!-- Card 1: Instalação Split (post_3) -->
             <div class="service-card">
                 <div class="service-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80" alt="Instalação de Ar-Condicionado Split em Paraíso">
-                    <span class="service-badge-pill">Padrão Fábrica</span>
+                    <img src="assets/post_3_Dcb4CUIvk0k.jpg" alt="Instalação de Ar Split Refrigeração Bom Clima">
+                    <span class="service-badge-pill">Instalação Padrão</span>
                 </div>
                 <div class="service-body">
                     <h4>Instalação de Ar Split</h4>
-                    <p>Instalação de modelos Convencionais e Inverter de 9.000 a 36.000 BTUs com respeito rígido aos manuais dos fabricantes.</p>
+                    <p>Instalação de aparelhos Convencionais e Inverter de 9.000 a 36.000 BTUs seguindo rigorosamente os padrões de fábrica.</p>
                     <ul class="service-check-list">
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Vácuo na tubulação de cobre</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Vácuo na tubulação com bomba específica</li>
                         <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Suportes reforçados e fixação segura</li>
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Teste com manifold e rendimento</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Teste com manifold e aferição térmica</li>
                     </ul>
                     <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20instala%C3%A7%C3%A3o%20de%20ar%20split!" target="_blank" class="btn-service-wpp">
-                        Pedir Orçamento de Instalação →
+                        Orçamento de Instalação →
                     </a>
                 </div>
             </div>
 
-            <!-- Card 2: Higienização Profunda -->
+            <!-- Card 2: Higienização Profunda (post_5) -->
             <div class="service-card">
                 <div class="service-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80" alt="Higienização de Ar-Condicionado em Domicílio">
-                    <span class="service-badge-pill">Saúde & Família</span>
+                    <img src="assets/post_5_DcI8l4RtlPz.jpg" alt="Higienização Periódica a cada 6 meses Bom Clima">
+                    <span class="service-badge-pill">Manutenção Preventiva</span>
                 </div>
                 <div class="service-body">
                     <h4>Higienização Antibacteriana</h4>
-                    <p>Limpeza química completa das aletas, serpentinas e turbina com bolsa coletora. Nada de respingos ou sujeira na sua casa.</p>
+                    <p>Limpeza técnica periódica a cada 6 meses. Desmontagem e aplicação de produtos bactericidas na serpentina e turbina.</p>
                     <ul class="service-check-list">
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Elimina 99,9% dos fungos e bactérias</li>
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Remove o mau cheiro ao ligar</li>
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Reduz o consumo elétrico do ar</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Elimina 99,9% dos fungos e odores</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Ar mais puro sem rinite na família</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Reduz o consumo de energia elétrica</li>
                     </ul>
-                    <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20higieniza%C3%A7%C3%A3o%20completa%20no%20meu%20ar!" target="_blank" class="btn-service-wpp">
+                    <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20higieniza%C3%A7%C3%A3o%20no%20meu%20ar!" target="_blank" class="btn-service-wpp">
                         Agendar Higienização →
                     </a>
                 </div>
             </div>
 
-            <!-- Card 3: Carga de Gás & Manutenção -->
+            <!-- Card 3: Carga de Gás & Manutenção (post_1) -->
             <div class="service-card">
                 <div class="service-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80" alt="Manutenção e Carga de Gás Ar Split Paraíso">
-                    <span class="service-badge-pill">Diagnóstico Preciso</span>
+                    <img src="assets/post_1_DcyS6YwORn2.jpg" alt="Manutenção Corretiva no Calor Bom Clima">
+                    <span class="service-badge-pill">Manutenção Corretiva</span>
                 </div>
                 <div class="service-body">
                     <h4>Carga de Gás & Reparos</h4>
-                    <p>Conserto ágil para vazamento de gás, pingadeira na sala, placas eletrônicas queimadas, capacitores e compressores travados.</p>
+                    <p>Nesse calor, a manutenção corretiva é essencial. Localizamos vazamentos de gás, trocamos capacitores e consertamos compressores.</p>
                     <ul class="service-check-list">
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Gás ecológico (R410A, R32 e R22)</li>
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Localização de vazamentos com nitrogênio</li>
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Troca de sensores e peças genuínas</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Carga de gás ecológico (R410A, R32, R22)</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Troca de capacitores e placas eletrônicas</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Eliminação definitiva de vazamento</li>
                     </ul>
                     <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20preciso%20de%20manuten%C3%A7%C3%A3o%20ou%20recarga%20de%20g%C3%A1s%20no%20meu%20ar!" target="_blank" class="btn-service-wpp">
                         Chamar para Conserto →
@@ -1681,19 +1751,19 @@
                 </div>
             </div>
 
-            <!-- Card 4: Geladeiras e Freezers -->
+            <!-- Card 4: Geladeiras e Freezers (post_7) -->
             <div class="service-card">
                 <div class="service-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=800&q=80" alt="Conserto de Geladeiras e Freezers em Paraíso">
-                    <span class="service-badge-pill">Refrigeração Doméstica</span>
+                    <img src="assets/post_7_Db8aosSA5Wd.jpg" alt="Conserto de Geladeiras em Paraíso Bom Clima">
+                    <span class="service-badge-pill">Pequeno & Grande Porte</span>
                 </div>
                 <div class="service-body">
                     <h4>Geladeiras & Freezers</h4>
-                    <p>Assistência técnica em refrigeradores duplex, Frost Free, freezers horizontais, verticais e balcões comerciais de refrigeração.</p>
+                    <p>Assistência especializada em refrigeradores duplex, Frost Free, freezers horizontais, verticais e balcões comerciais refrigerados.</p>
                     <ul class="service-check-list">
                         <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Troca de motor / compressor e filtro secador</li>
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Sistema Frost Free não descongela</li>
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Troca de borrachas e termostato</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Conserto de tubulação de freezer e balcão</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Sistema Frost Free não gela embaixo</li>
                     </ul>
                     <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20minha%20geladeira%2Ffreezer%20precisa%20de%20conserto!" target="_blank" class="btn-service-wpp">
                         Consertar Geladeira / Freezer →
@@ -1701,19 +1771,19 @@
                 </div>
             </div>
 
-            <!-- Card 5: Máquinas de Lavar -->
+            <!-- Card 5: Máquinas de Lavar (post_12) -->
             <div class="service-card">
                 <div class="service-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80" alt="Manutenção de Máquinas de Lavar Paraíso TO">
+                    <img src="assets/post_12_Davil0BtCwk.jpg" alt="Conserto e Higienização de Lavadoras Bom Clima">
                     <span class="service-badge-pill">Lavadoras & Tanquinhos</span>
                 </div>
                 <div class="service-body">
-                    <h4>Máquinas de Lavar & Tanquinhos</h4>
-                    <p>Conserto e revisão mecânica completa das principais marcas: Brastemp, Consul, Electrolux, Colormaq e Mueller.</p>
+                    <h4>Máquinas de Lavar Roupas</h4>
+                    <p>Sua máquina está soltando resíduos pretos nas roupas, não centrifuga ou faz barulho forte? Fazemos higienização de cesto e revisão.</p>
                     <ul class="service-check-list">
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Não centrifuga ou não solta água</li>
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Barulho alto ao rodar o tambor</li>
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Troca de retentores, câmbio e placa</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Brastemp, Consul, Electrolux e Colormaq</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Troca de retentor, rolamento e bomba d'água</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Higienização profunda do cesto</li>
                     </ul>
                     <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20preciso%20de%20conserto%20na%20minha%20m%C3%A1quina%20de%20lavar!" target="_blank" class="btn-service-wpp">
                         Consertar Máquina de Lavar →
@@ -1721,19 +1791,19 @@
                 </div>
             </div>
 
-            <!-- Card 6: Contratos Comerciais -->
+            <!-- Card 6: Climatização Comercial & Cortina de Ar (post_6) -->
             <div class="service-card">
                 <div class="service-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Contratos de Climatização para Empresas Paraíso">
-                    <span class="service-badge-pill">Empresas & Clínicas</span>
+                    <img src="assets/post_6_Db_a_1lNkf2.jpg" alt="Manutenção em Cortina de Ar e Comercial Bom Clima">
+                    <span class="service-badge-pill">Comércio & Indústria</span>
                 </div>
                 <div class="service-body">
-                    <h4>Contratos Comerciais & PMOC</h4>
-                    <p>Planos mensais de manutenção preventiva para comércios, escritórios, consultórios e escolas em Paraíso com atendimento prioritário.</p>
+                    <h4>Comercial, Cortinas de Ar & PMOC</h4>
+                    <p>Climatização completa para lojas, farmácias, escritórios e consultórios em Paraíso com contratos preventivos mensais.</p>
                     <ul class="service-check-list">
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Visitas técnicas preventivas programadas</li>
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Emissão de nota fiscal e relatório técnico</li>
-                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Menor risco de quebras no pico do calor</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Manutenção em cortinas de ar para comércio</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Planos preventivos com emissão de laudo</li>
+                        <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Atendimento prioritário para sua empresa</li>
                     </ul>
                     <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20contrato%20de%20manuten%C3%A7%C3%A3o%20para%20minha%20empresa!" target="_blank" class="btn-service-wpp">
                         Proposta para Minha Empresa →
@@ -1743,19 +1813,97 @@
         </div>
     </section>
 
+    <!-- Vitrine de Postagens Reais do Instagram @bomclimarefri -->
+    <section class="instagram-showcase-section" id="trabalhos">
+        <div class="section-header">
+            <span class="section-tag">Direto do Nosso Instagram</span>
+            <h3 class="section-title">Acompanhe Nossos Serviços no Instagram</h3>
+            <p class="section-subtitle">Transparência e fotos reais do dia a dia da nossa equipe em Paraíso do Tocantins. Siga nosso perfil oficial <strong>@bomclimarefri</strong>.</p>
+        </div>
+
+        <div class="insta-grid">
+            <!-- Post 1 -->
+            <a href="https://www.instagram.com/p/DcyS6YwORn2/" target="_blank" class="insta-card">
+                <div class="insta-img-box">
+                    <img src="assets/post_1_DcyS6YwORn2.jpg" alt="Manutenção corretiva ar split Bom Clima">
+                    <span class="insta-overlay-icon">📸</span>
+                </div>
+                <div class="insta-caption">
+                    "Nesse calor manutenção corretiva é essencial. Agende a revisão do seu ar com a nossa equipe!"
+                </div>
+                <div class="insta-meta">
+                    <span>@bomclimarefri</span>
+                    <span>Ver no Instagram →</span>
+                </div>
+            </a>
+
+            <!-- Post 2 -->
+            <a href="https://www.instagram.com/p/DcbAn0HNTp1/" target="_blank" class="insta-card">
+                <div class="insta-img-box">
+                    <img src="assets/post_4_DcbAn0HNTp1.jpg" alt="Equipe Bom Clima pronta para atender">
+                    <span class="insta-overlay-icon">📸</span>
+                </div>
+                <div class="insta-caption">
+                    "A nossa equipe sempre pronta para atender você! Agende sua manutenção preventiva com segurança."
+                </div>
+                <div class="insta-meta">
+                    <span>@bomclimarefri</span>
+                    <span>Ver no Instagram →</span>
+                </div>
+            </a>
+
+            <!-- Post 3 -->
+            <a href="https://www.instagram.com/p/Db8aosSA5Wd/" target="_blank" class="insta-card">
+                <div class="insta-img-box">
+                    <img src="assets/post_7_Db8aosSA5Wd.jpg" alt="Assistência em geladeiras Bom Clima">
+                    <span class="insta-overlay-icon">📸</span>
+                </div>
+                <div class="insta-caption">
+                    "Assistência técnica especializada em geladeiras de pequeno e grande porte, com excelência e garantia."
+                </div>
+                <div class="insta-meta">
+                    <span>@bomclimarefri</span>
+                    <span>Ver no Instagram →</span>
+                </div>
+            </a>
+
+            <!-- Post 4 -->
+            <a href="https://www.instagram.com/p/DaSjjZOuTPS/" target="_blank" class="insta-card">
+                <div class="insta-img-box">
+                    <img src="assets/post_14_DaSjjZOuTPS.jpg" alt="Tubulação de freezer e balcão">
+                    <span class="insta-overlay-icon">📸</span>
+                </div>
+                <div class="insta-caption">
+                    "Revisão técnica de tubulação de freezer e balcões comerciais. Equipamento gelando perfeitamente."
+                </div>
+                <div class="insta-meta">
+                    <span>@bomclimarefri</span>
+                    <span>Ver no Instagram →</span>
+                </div>
+            </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+            <a href="https://www.instagram.com/bomclimarefri/" target="_blank" class="btn-hero-secondary" style="display: inline-flex; gap: 8px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <span>Siga @bomclimarefri no Instagram (+840 Seguidores)</span>
+            </a>
+        </div>
+    </section>
+
     <!-- Alerta de Calor Local de Paraíso do Tocantins -->
     <div class="local-heat-alert">
         <div class="heat-alert-box">
             <div class="heat-alert-left">
                 <h3>O Calor de Paraíso do Tocantins Não Perdoa.</h3>
-                <p>Nossa cidade atinge facilmente 38°C a 40°C. Um aparelho com sujeira ou com gás baixo é forçado ao limite, consome até o dobro de energia elétrica e pode queimar o motor a qualquer momento. Não espere o ar parar de vez: faça sua revisão preventiva!</p>
+                <p>Nossa cidade atinge frequentemente 38°C a 40°C. Um aparelho com sujeira ou com gás baixo é forçado ao limite, consome até o dobro de energia elétrica e pode queimar o motor a qualquer momento. Não espere o ar parar de vez: faça sua revisão preventiva!</p>
             </div>
             <div class="heat-alert-right">
                 <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20revis%C3%A3o%20preventiva%20no%20meu%20ar-condicionado!" target="_blank" class="btn-heat-wpp">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.45 1.03 2.62.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.06-.1-.22-.16-.47-.28z"/></svg>
                     <span>Agendar Revisão Preventiva</span>
                 </a>
-                <span style="font-size: 13px; color: #94A3B8;">Atendemos de Segunda a Sábado</span>
+                <span style="font-size: 13px; color: #94A3B8;">Atendimento de Segunda a Sábado</span>
             </div>
         </div>
     </div>
@@ -1765,13 +1913,13 @@
         <div class="about-container">
             <div class="about-text">
                 <span class="section-tag">Tradição & Oficina Física</span>
-                <h3>Atendendo Paraíso do Tocantins com Honestidade e Preço Justo</h3>
-                <p>Na Refrigeração Bom Clima você não lida com intermediários. Você fala direto com técnicos capacitados que conhecem os desafios térmicos da nossa região. Trabalhamos com ferramentas digitais de aferição, peças originais e garantia documentada.</p>
+                <h3>11 Anos de Mercado e Excelência em Paraíso do Tocantins</h3>
+                <p>Na Refrigeração Bom Clima você fala direto com quem entende. São 11 anos de experiência prática instalando, higienizando e consertando equipamentos de climatização e refrigeração em Paraíso e cidades vizinhas. Nossa oficina no Setor Oeste conta com bancada própria e técnicos equipados para atendimento em domicílio.</p>
                 
                 <div class="about-numbers-grid">
                     <div class="about-num-card">
-                        <div class="about-num-val">+10 Anos</div>
-                        <div class="about-num-label">De experiência técnica consolidada</div>
+                        <div class="about-num-val">11 Anos</div>
+                        <div class="about-num-label">De mercado em Paraíso e região</div>
                     </div>
                     <div class="about-num-card">
                         <div class="about-num-val">+3.800</div>
@@ -1779,8 +1927,8 @@
                     </div>
                 </div>
 
-                <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20t%C3%A9cnico%20da%20Bom%20Clima!" target="_blank" class="btn-hero-primary" style="display: inline-flex;">
-                    <span>Falar Direto com a Oficina</span>
+                <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Refrigera%C3%A7%C3%A3o%20Bom%20Clima!" target="_blank" class="btn-hero-primary" style="display: inline-flex;">
+                    <span>Falar Direto com a Equipe</span>
                 </a>
             </div>
 
@@ -1941,10 +2089,10 @@
             <div class="cta-buttons-wrap">
                 <a href="https://wa.me/5563984288009?text=Ol%C3%A1%2C%20preciso%20de%20um%20or%C3%A7amento%20urgente%20com%20a%20Refrigera%C3%A7%C3%A3o%20Bom%20Clima!" target="_blank" class="btn-hero-primary" style="font-size: 18px; padding: 20px 38px;">
                     <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.45 1.03 2.62.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.59.21-1.09.15-1.19-.06-.1-.22-.16-.47-.28z"/></svg>
-                    <span>Falar no WhatsApp Agora</span>
+                    <span>Falar no WhatsApp: (63) 98428-8009</span>
                 </a>
                 <a href="tel:6336024147" class="btn-hero-secondary" style="background: rgba(255,255,255,0.1); color: var(--white); border-color: rgba(255,255,255,0.2);">
-                    <span>Ligar: (63) 3602-4147</span>
+                    <span>Ligar Fixo: (63) 3602-4147</span>
                 </a>
             </div>
         </div>
@@ -1954,9 +2102,7 @@
     <footer>
         <div class="footer-container">
             <div class="logo-box">
-                <div class="logo-icon" style="width: 38px; height: 38px;">
-                    <svg viewBox="0 0 24 24" style="width: 22px; height: 22px;"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"/></svg>
-                </div>
+                <img src="assets/bomclima_logo.jpg" alt="Logo Bom Clima" class="logo-img" style="width: 42px; height: 42px;">
                 <div class="logo-text">
                     <h1 style="color: #F8FAFC; font-size: 19px;">Bom Clima</h1>
                     <span style="color: #38BDF8;">Refrigeração & Climatização</span>
